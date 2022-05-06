@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato.ttf");
+}
+
+@font-face {
+  font-family: "Linotte";
+  src: url("fonts/Linotte.otf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: Lato;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+  overflow-x: hidden;
+}
+
+*::scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}

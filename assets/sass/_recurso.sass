@@ -1,0 +1,64 @@
+@font-face 
+    font-family: "Lato"
+    src: url('fonts/Lato.ttf')
+@font-face 
+    font-family: "Linotte"
+    src: url('fonts/Linotte.otf')
+    
+*
+    margin: 0px
+    padding: 0px
+    list-style: none
+    font-family: Lato
+    text-decoration: none
+    box-sizing: border-box
+
+body
+    background: #8f8f8f94
+    overflow-x: hidden
+
+*::scrollbar
+    width: 0px
+*::-webkit-scrollbar
+    width: 0px
+*::-moz-scrollbar
+    width: 0px
+*::-moz-osx-scrollbar
+    width: 0px
+
+@mixin padrao($width: 100%, $padding: 2.3rem)
+    width: $width
+    padding: $padding
+
+@mixin flex ($align: normal, $justify: center, $direction: row, $gap: 0px)
+    display: flex
+    align-items: $align
+    justify-content: $justify
+    flex-direction: $direction
+    gap: $gap
+    
+@mixin grid($colums: 1, $gap : 10px)
+    display: grid
+    grid-template-columns: repeat($colums,1fr)
+    grid-gap: $gap
+
+@mixin table
+    @media ( max-width:  768px)
+        @content
+        
+@mixin mobile-l
+    @media ( max-width:  577px)
+        @content
+
+@mixin mobile-m
+    @media ( max-width:  375px)
+        @content
+
+@mixin mobile-s
+    @media ( max-width:  320px)
+        @content
+
+
+
+
+
