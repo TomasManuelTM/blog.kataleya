@@ -1,0 +1,330 @@
+@import url("bootstrap-icons.css");
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato.ttf");
+}
+
+@font-face {
+  font-family: "Linotte";
+  src: url("fonts/Linotte.otf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/raleway.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: Lato;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+*::scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-moz-scrollbar {
+  width: 0px;
+}
+
+*::-moz-osx-scrollbar {
+  width: 0px;
+}
+
+.indexLogin {
+  width: 100%;
+  height: 100vh;
+  width: 100%;
+  padding: 2.3rem;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.indexLogin div.img {
+  top: -20px;
+  display: none;
+  position: relative;
+}
+
+.indexLogin div.img img {
+  top: 0px;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: absolute;
+  background: #ff043a;
+}
+
+.indexLogin form {
+  padding: 2rem;
+  width: 500px;
+  height: 300px;
+  background: #ddd;
+  border-radius: 10px;
+  transition: transform 6s;
+}
+
+.indexLogin form div {
+  margin: 0 0 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.indexLogin form div span {
+  font-weight: 900;
+  font-family: Linotte;
+}
+
+.indexLogin form div input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.indexLogin form div:last-child {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.indexLogin form div:last-child a {
+  color: #777;
+  font-weight: 400;
+  font-family: Linotte;
+}
+
+.indexLogin form div:last-child button {
+  outline: none;
+  padding: .6rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.indexPerfil {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0;
+}
+
+.indexPerfil .menu {
+  float: left;
+  width: 250px;
+  height: 100vh;
+  padding: 3rem 2rem;
+  background: #888;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.indexPerfil .menu h2 {
+  color: #fff;
+  font-family: Linotte;
+}
+
+.indexPerfil .menu ul li {
+  display: block;
+  margin: .7rem 0;
+  cursor: pointer;
+  transition: .9s;
+}
+
+.indexPerfil .menu ul li a {
+  color: #fff;
+  font-family: Linotte;
+}
+
+.indexPerfil .menu ul li a i {
+  color: #ddd;
+  padding: 0 .2rem 0 0;
+}
+
+.indexPerfil .menu ul li span {
+  color: #fff;
+  font-family: Linotte;
+}
+
+.indexPerfil .menu ul li span i {
+  color: #ddd;
+  padding: 0 .4rem 0 0;
+}
+
+.indexPerfil .menu ul li:hover {
+  transition: 3s;
+}
+
+.indexPerfil .menu ul li:hover ul {
+  transition: display 1s;
+  display: block;
+}
+
+.indexPerfil .menu ul li ul {
+  display: none;
+  transition: 9s, display .5s;
+  padding: .0rem 1.3rem .0rem;
+}
+
+.indexPerfil .menu ul li ul li {
+  padding: .0rem 0;
+}
+
+.indexPerfil .painel {
+  float: left;
+  height: 100%;
+  padding: 1rem 2rem;
+  width: calc(100%  -  250px);
+}
+
+.indexPerfil .painel h1 {
+  color: #999;
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-family: Linotte;
+}
+
+.indexPerfil .painel .dashboard {
+  height: 100vh;
+  display: block;
+  width: initial;
+}
+
+.indexPerfil .painel .dashboard div.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.indexPerfil .painel .dashboard div.columns div {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #ccc;
+}
+
+.indexPerfil .painel .registros {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0;
+}
+
+.indexPerfil .painel .registros .artigos {
+  height: 100vh;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.indexPerfil .painel .registros .artigos h4 {
+  font-size: .8rem;
+  padding: .5rem 0;
+  font-family: Linotte;
+  text-transform: uppercase;
+}
+
+.indexPerfil .painel .registros .artigos ul {
+  padding: 1rem 0 0;
+  position: relative;
+  border-left: 1px solid #ccc;
+}
+
+.indexPerfil .painel .registros .artigos ul li {
+  margin: 1rem 0;
+}
+
+.indexPerfil .painel .registros .artigos ul li::before {
+  content: "";
+  padding: 5px;
+  background: #333;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 1rem 0 -.3rem;
+}
+
+.indexPerfil .painel .registros .artigos ul li:nth-child(even)::before {
+  background: #999;
+}
+
+.indexPerfil .painel .registros .artigos ul li:last-child {
+  margin: 0px;
+}
+
+.indexPerfil .painel .registros .form {
+  width: 500px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: rgba(204, 204, 204, 0.8);
+}
+
+.indexPerfil .painel .registros .form div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 0 0 .6rem;
+  grid-template-columns: 1fr .5fr;
+}
+
+.indexPerfil .painel .registros .form div div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.indexPerfil .painel .registros .form div.t_ {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.indexPerfil .painel .registros .form div.t_ button {
+  width: 150px;
+  padding: .8rem;
+  cursor: pointer;
+  margin: 10px 0 0;
+  font-family: Linotte;
+}
+
+.indexPerfil .painel .registros .form div span {
+  font-size: .9rem;
+  line-height: 5px;
+  font-family: Linotte;
+  text-transform: lowercase;
+}
+
+.indexPerfil .painel .registros .form div input, .indexPerfil .painel .registros .form div select, .indexPerfil .painel .registros .form div textarea {
+  padding: 8px;
+  border: none;
+  color: #333;
+  outline: none;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: Linotte;
+}
+
+.indexPerfil .painel .registros .form div textarea {
+  width: 467px;
+  height: 150px;
+  max-width: 467px;
+  min-width: 467px;
+  min-height: 150px;
+  max-height: 150px;
+}

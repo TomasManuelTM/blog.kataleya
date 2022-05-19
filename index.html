@@ -4,93 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kataleya</title>
-    <link rel="stylesheet" href="assets/sass/index.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/sass/loginPerfil.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-div">
-            <ul class="lista">
-                <li><a href="">Kataleya Nicolau</a></li>
-                <!-- <li><a href="">Recentes</a></li> -->
-                <!-- <li><a href="">Sobre</a></li> -->
-                <!-- <li><a href="">Envia Mensagem</a></li> -->
+    <div class="indexPerfil">
+        <div class="menu">
+            <h2>Kataleya Nicolau </h2>
+            <ul>
+                <li><a href=""><i class="bi bi-layout-wtf"></i> Dashboard</a></li>
+                <li><a href=""><i class="bi bi-arrow-down-up"></i> Portal</a></li>
+                <li><a href=""><i class="bi bi-eye"></i> Registros</a></li>
+                <li>
+                    <span><i class="bi bi-plus"></i>Cadastrar</span>
+                    <ul>
+                        <li><a href=""><i class="bi bi-chat-square-quote"></i> Artigo</a></li>
+                        <li><a href=""><i class="bi bi-bookmark-check"></i>Tags</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="bi bi-bell"></i> Notificação</a></li>
             </ul>
-            <div class="social">
-                <a href="#" target="new_black"><i class="bi bi-facebook" title="facebook"></i></a>
-                <a href="#" target="new_black"><i class="bi bi-whatsapp" title="whatsapp"></i></a>
-                <a href="#" target="new_black"><i class="bi bi-instagram" title="instagram"></i></a>
-            </div>
-        </div>
-        <div class="_">
-            <h2>Kataleya Nicolau</h2>
-            <p>
-                <span>Motivação</span>
-                <span>Historias</span>
-                <span>Refleções</span>
-                <span>Dicas</span>
-            </p>
-        </div>
-    </header>
 
-    <section class="index">
-        <div class="postItem">
-            <div class="postItem-div">
-                <span>22/05/2022</span>
-                <div>
-                    <h2>Uma amizade diaria</h2>
-                    <p>este é apenas um simples teste para analisar a fonte e a sua estetica de forma a concluir como sera enquadrado no sistema funcional deste bloguuer para kataleya</p>
+            <!-- <img src="" alt=""> -->
+        </div>
+        <article class="painel">
+            <h1>Registros</h1>
+            <div class="registros">
+                <div class="artigos">
+                    <h4>Artigos</h4>
+                    <ul>
+                        <li><a href="">Unitel</a></li>
+                        <li><a href="">Africel</a></li>
+                        <li><a href="">Movicel</a></li>
+                    </ul>
+                </div>
 
-                    <section>
-                        <div class="tags">
-                            <span>Citações</span>
-                            <span>Moticação</span>
+                <form action="" class="form">
+                    <div>
+                        <div>
+                            <span>Assunto</span>
+                            <input type="text" name="" placeholder="assunto">
                         </div>
-                        <hgroup class="shares">
-                            <span class="mssage"><i class="bi bi-star"></i> <strong>1</strong></span>
-                            <span class="shares"><i class="bi bi-share"></i> <strong>1</strong></span>
-                        </hgroup>
-                    </section>
-                </div>
-            </div>
-            <div class="postItem-div">
-                <span>22/05/2022</span>
-                <div>
-                    <h2>Uma amizade diaria</h2>
-                    <p>este é apenas um simples teste para analisar a fonte e a sua estetica de forma a concluir como sera enquadrado no sistema funcional deste bloguuer para kataleya</p>
-
-                    <section>
-                        <div class="tags">
-                            <span>Citações</span>
-                            <span>Moticação</span>
+    
+                        <div>
+                            <span>Categoria</span>
+                            <select name="" id="">
+                                <option disabled selected>selecionar</option>
+                                <option value="">motivacao</option>
+                                <option value="">bloguer</option>
+                                <option value="">auto-ajuda</option>
+                            </select>
                         </div>
-                        <hgroup class="shares">
-                            <span class="mssage"><i class="bi bi-star"></i> <strong>1</strong></span>
-                            <span class="shares"><i class="bi bi-share"></i> <strong>1</strong></span>
-                        </hgroup>
-                    </section>
-                </div>
+                    </div>
+                    <div class="t_">
+                        <span>Conteudo</span>
+                        <textarea placeholder="escreva o seu conteudo deste assunto"></textarea>
+                    </div>
+                    <div class="t_">
+                        <button>cadastrar</button>
+                    </div>
+                </form>
             </div>
-        </div>
-
-        <artilce class="informacao">
-           <div class="sobre">
-            <h3>Sobre</h3>
-                <div class="img"><img src="assets/src/fundo.jpg" alt=""></div>
-                <p>Eu sou a kataleya Nicolau escritora, idealista e psicologa. Este é um bloguer e nela consta experiencias pessoais e de pacientes</p>
-           </div>
-           <div class="tags">
-            <h3>Tags</h3>
-                <div>
-                    <a>Motivação<span>(10)</span></a>
-                    <a>Citações<span>(3)</span></a>
-                </div>
-           </div>
-        </artilce>
-    </section>
-
-    <footer class="copy">
-        <p>Kataleya Nicolau &copy 2022. <span>Developer e Deisgn By <strong>Tomas Manuel</strong></span></p>
-    </footer>
+        </article>
+    </div>
 </body>
 </html>

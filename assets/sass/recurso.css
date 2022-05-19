@@ -8,6 +8,11 @@
   src: url("fonts/Linotte.otf");
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/raleway.ttf");
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -17,15 +22,18 @@
   box-sizing: border-box;
 }
 
-body {
-  background: gray;
-  overflow-x: hidden;
-}
-
 *::scrollbar {
   width: 0px;
 }
 
 *::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-moz-scrollbar {
+  width: 0px;
+}
+
+*::-moz-osx-scrollbar {
   width: 0px;
 }

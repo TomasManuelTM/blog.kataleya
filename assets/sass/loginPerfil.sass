@@ -1,0 +1,235 @@
+@import url("bootstrap-icons.css")
+@import "recurso"
+
+
+.indexLogin
+    width: 100%
+    height: 100vh
+    @include padrao
+    background: #f1f1f1
+    @include flex (center, center, column, 0px)
+
+    // form
+    div.img
+        top: -20px
+        display: none
+        position: relative
+
+        img
+            top: 0px
+            padding: 2rem
+            margin: 0 auto
+            border-radius: 50%
+            position: absolute
+            background: #ff043a
+
+    form
+        padding: 2rem
+        width: 500px
+        height: 300px
+        background: #ddd
+        border-radius: 10px
+        transition: transform 6s
+
+        div
+            margin: 0 0 20px
+            @include grid(1)
+           
+            span
+               font-weight: 900
+               font-family: Linotte
+
+            input
+                padding: 15px
+                border: none
+                outline: none
+                border-radius: 8px
+
+            &:last-child
+                padding: 1rem 0
+                @include grid(2, 2rem)
+
+                a
+                    color: #777
+                    font-weight: 400
+                    font-family: Linotte
+
+                button
+                    
+                    outline: none
+                    padding: .6rem
+                    cursor: pointer
+                    border-radius: 5px
+
+.indexPerfil
+    width: 100%
+    @include flex(flex-start, space-between, row, 0)
+
+    .menu
+        float: left
+        width: 250px
+        height: 100vh
+        padding: 3rem 2rem
+        background: #888
+        @include flex(baseline, null, column, 3rem)
+
+        h2
+            color: #fff
+            font-family: Linotte
+
+        ul
+            li
+                display: block
+                margin: .7rem 0
+                cursor: pointer
+                transition: .9s
+
+                a
+                    color: #fff
+                    font-family: Linotte
+
+                    i
+                        color: #ddd
+                        padding: 0 .2rem 0 0
+                span
+                    color: #fff
+                    font-family: Linotte
+                    
+                    i
+                        color: #ddd
+                        padding: 0 .4rem 0 0
+
+                &:hover
+                    transition: 3s
+
+                    ul
+                        transition: display 1s
+                        display: block
+                ul
+                    display: none
+                    transition: 9s, display .5s
+                    padding: .0rem 1.3rem .0rem
+
+                    li
+                        padding: .0rem 0
+
+    .painel
+        float: left
+        height: 100%
+        padding: 1rem 2rem
+        width: calc(100%  -  250px)
+
+        h1
+            color: #999
+            padding: 1rem 0
+            font-size: 3rem
+            font-family: Linotte
+
+        .dashboard
+            height: 100vh
+            display: block
+            width: initial
+
+            div.columns
+                paddinf
+                @include grid(3, 1.5rem)
+                
+                div
+                    padding: 1rem
+                    border-radius: 8px
+                    background: #ccc
+
+        .registros
+            @include flex(baseline, space-between, row, 0)
+
+            .artigos
+                height: 100vh
+                padding: 2rem 0
+                position: relative
+
+                h4
+                    font-size: .8rem
+                    padding: .5rem 0
+                    font-family: Linotte
+                    text-transform: uppercase
+                ul
+                    padding: 1rem 0 0
+                    position: relative
+                    border-left: 1px solid #ccc
+
+                    li
+                        margin: 1rem 0
+
+                        &::before
+                            content: ""
+                            padding: 5px
+                            background: #333
+                            border-radius: 50%
+                            display: inline-block
+                            margin: 0 1rem 0 -.3rem
+
+                        &:nth-child(even)
+                            &::before
+                                background: #999
+
+                        &:last-child
+                            margin: 0px
+
+            .form
+                width: 500px
+                padding: 1.5rem
+                border-radius: 8px
+                background: rgba(204, 204, 204,.8)
+
+                div
+                    width: 100%
+                    @include grid(2)
+                    margin: 0 0 .6rem
+                    grid-template-columns: 1fr .5fr
+
+                    div
+                        @include grid(1)
+                    &.t_
+                        @include grid(1)
+                        
+                        button
+                            width: 150px
+                            padding: .8rem
+                            cursor: pointer
+                            margin: 10px 0 0
+                            font-family: Linotte
+
+                    span
+                        font-size: .9rem
+                        line-height: 5px
+                        font-family: Linotte
+                        text-transform: lowercase
+                        
+                    input, select, textarea
+                        padding: 8px
+                        border: none
+                        color: #333
+                        outline: none
+                        font-weight: 600
+                        border-radius: 5px
+                        font-family: Linotte
+
+                    textarea
+                        width: 467px
+                        height: 150px
+                        max-width: 467px
+                        min-width: 467px
+                        min-height: 150px
+                        max-height: 150px
+
+
+
+
+
+
+
+
+
+
+
+

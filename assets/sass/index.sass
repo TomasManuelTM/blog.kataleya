@@ -1,8 +1,10 @@
+@import url("bootstrap-icons.css")
 @import "recurso"
-@import "bootstrap-icons"
 
 
-
+body
+    background: #ddd
+    overflow-x: hidden
 
 
 .header
@@ -103,31 +105,40 @@
             margin: 0 0 3rem
 
             span
-                color: #999
+                color: #666
                 font-weight: 900
+                font-size: .9rem
                 letter-spacing: 2px
                 font-family: Linotte
             div
-                padding: 1rem
                 margin: .5rem 0
+                padding: 1rem 1.8rem
                 background: #fff
                 border-radius: 5px
 
                 h2
                     color: #666
-                    font-size: 2rem
+                    font-size: 2.5rem
                     font-weight: 900
                     padding: .3rem 0
                     font-family: Linotte
                 p
-                    color: #666
-                    font-weight: 600
-                    line-height: 25px
+                    color: #333
+                    font-weight: 500
+                    line-height: 28px
+                    font-size: 1.1rem
+                    margin: 0 0 0.8rem
+                    letter-spacing: .1rem
+                    text-justify: distribute-all-lines
+
+
+                    &:last-child
+                        margin: 0px
                 section
                     width: 100%
-                    margin: 1rem 0
                     padding: .3rem 0
-                    border-top:1px solid #ccc
+                    margin: 1rem 0 .2rem
+                    border-top: 1px solid #ccc
                     
                     @include flex(center, space-between)
                     @include mobile-l
@@ -186,8 +197,8 @@
                     transform: translate(0px, 10px)
             p
                 padding: 1rem
-                font-size: .9rem
-                line-height: 20px
+                font-size: 1rem
+                line-height: 24px
                 text-align: center
             .img
                 width: 180px
